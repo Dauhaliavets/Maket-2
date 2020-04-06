@@ -1,0 +1,17 @@
+.for_all_devices {
+    padding-top: 109px;
+    text-align: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%),
+    url('../img/for-all-devices/background-image.png') center no-repeat;
+    position: relative;
+    .tablet {
+        margin-left: -27px;
+        margin-top: 45px;
+    }
+    .for_all_devices_phone_box {
+        position: absolute;
+        bottom: -91px;
+        left: 500px;
+        right: 0;
+    }
+}

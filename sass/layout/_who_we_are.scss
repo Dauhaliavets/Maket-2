@@ -1,0 +1,84 @@
+.who_we_are {
+    text-align: center;
+    padding: 99px 0px 118px;
+    p {
+        margin: 46px 0px 92px;
+        color: $color-text;
+        font-family: $font-roboto;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    .team_box {
+        display: flex;
+        justify-content: space-between;
+        .team_item {
+            position: relative;
+            .team_item_bg, .team_item_foto, .team_item_hover {
+                width: 380px;
+                height: 470px;
+            }
+            .team_item_bg {
+                background-color: #95e1d3;
+            }
+            .team_item_foto {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            .team_item_hover {
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: -1;
+                background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .team_item_social_box {
+                    display: flex;
+                    justify-content: center;
+                    .team_item_social_item {
+                        width: 56px;
+                        height: 56px;
+                        background-color: #fce38a;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        i {
+                            color: #f38181;
+                        }
+                        &:hover {
+                            background-color: #f38181;
+                            i {
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                    .team_item_social_item {
+                        margin-right: 1px;
+                    }
+                    .team_item_social_item:last-child {
+                        margin-right: none;
+                    }
+                }
+            }
+            .team_item_about {
+                margin-top: 31px;
+            }
+        }
+        .team_item:hover {
+            .team_item_foto {
+                top: -10px;
+                left: -10px;
+            }
+            .team_item_hover{
+                top: -10px;
+                left: -10px;
+                z-index: 2;
+                cursor: pointer;
+            }
+
+        }
+    }
+}

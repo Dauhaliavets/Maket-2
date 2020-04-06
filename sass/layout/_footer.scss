@@ -1,0 +1,155 @@
+.footer_top {
+    padding-top: 74px;
+    padding-bottom: 69px;
+    display: flex;
+    justify-content: space-between;
+    .footer_logo_box {
+        flex-basis: 480px;
+        .footer_logo {
+            color: #cccccc;
+            font-family: $font-montserrat;
+            font-size: 46px;
+            font-weight: 700;
+        }
+        .footer_about {
+            color: $color-text;
+            font-family: $font-roboto;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-top: 42px;
+            margin-bottom: 49px;
+        }
+        .footer_all_followers {
+            color: #333333;
+            font-family: $font-montserrat;
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 18px;
+            span {
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+        .footer_follow_us {
+            margin: 16px 0 38px;
+            span {
+                color: $color-text;
+                font-family: $font-roboto;
+                font-style: italic;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-right: 23px;
+            }
+            a {
+                margin-right: 15px;
+                i {
+                    color: #95e1d3;
+                }
+            }
+            a:last-child{
+                margin-right: 0;
+            }
+        }
+        .footer_form {
+            .email {
+                width: 230px;
+                height: 40px;
+                border: 1px solid #e7e7e7;
+                background-color: #ffffff;
+                padding: 13px;
+            }
+            .footer_button {
+                width: 150px;
+                height: 40px;
+                background-color: #95e1d3;
+                border: none;
+                color: #ffffff;
+                font-family: $font-montserrat;
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-left: -5px;
+                vertical-align: bottom;
+            }
+        }
+    }
+    .footer_blogs_box {
+        flex-basis: 360px;
+        .blogs_items_box {
+            margin-top: 40px;
+            .blogs_item_box {
+                display: flex;
+                margin-bottom: 31px;
+                .blogs_item_content {
+                    padding: 21px 0 0 20px;
+                    .item_title {
+                        color: $color-title;
+                        font-family: $font-montserrat;
+                        font-size: 12px;
+                        font-weight: 700;
+                        line-height: 18px;
+                        text-transform: uppercase;
+                    }
+                    .item_date {
+                        color: $color-text;
+                        font-family: $font-roboto;
+                        font-style: italic;
+                        font-size: 13px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+            }
+            .blogs_item_box:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .footer_insta_box {
+        flex-basis: 270px;
+        .footer_insta_items_box {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            .insta_item {
+                flex-basis: 88px;
+                display: flex;
+                margin: 1px;
+            }
+        }
+        .view_more {
+            color: $color-title;
+            font-family: $font-roboto;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 24px;
+            text-decoration: none;
+            font-style: italic;
+            cursor: pointer;
+        }
+    }
+}
+
+.footer_long_line {
+    width: auto;
+    height: 1px;
+    background-color: #e5e5e5;
+}
+
+.footer_bottom {
+    text-align: center;
+    padding: 24px 0 22px;
+    .copyright {
+        color: $color-title;
+        font-family: $font-montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        a {
+            color: #f38181;
+            text-decoration: none;
+        }
+    }
+}

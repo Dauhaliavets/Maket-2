@@ -1,0 +1,20 @@
+{
+  "name": "maket-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch sass/main.scss sass/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dauhaliavets/Maket-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dauhaliavets/Maket-2/issues"
+  },
+  "homepage": "https://github.com/Dauhaliavets/Maket-2#readme"
+}
