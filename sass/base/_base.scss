@@ -5,6 +5,10 @@ html {
 body {
     font-size: 1.4rem;
     line-height: 1;
+    overflow-x: hidden;
+}
+body.lock {
+    overflow: hidden;
 }
 
 h2 {

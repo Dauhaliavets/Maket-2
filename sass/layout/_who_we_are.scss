@@ -17,6 +17,10 @@
             .team_item_bg, .team_item_foto, .team_item_hover {
                 width: 380px;
                 height: 470px;
+                @media all and (max-width: 650px) {
+                    width: 290px;
+                    height: 380px;
+                }
             }
             .team_item_bg {
                 background-color: #95e1d3;
@@ -25,6 +29,12 @@
                 position: absolute;
                 left: 0;
                 top: 0;
+                img {
+                    @media all and (max-width: 650px) {
+                        width: 290px;
+                        height: 380px;
+                    }
+                }
             }
             .team_item_hover {
                 position: absolute;
@@ -66,6 +76,9 @@
             .team_item_about {
                 margin-top: 31px;
             }
+            @media all and (max-width: 1280px) {
+                margin-bottom: 40px;
+            }
         }
         .team_item:hover {
             .team_item_foto {
@@ -80,5 +93,12 @@
             }
 
         }
+        @media all and (max-width: 1280px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    @media all and (max-width: 1280px) {
+        padding-bottom: 38px;
     }
 }

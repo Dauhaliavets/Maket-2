@@ -16,8 +16,31 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 120px;
+    @media all and (max-width: 1000px) {
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
 }
-
+.service_content_foto {
+    flex-basis: 579px;
+    margin-right: 30px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    @media all and (max-width: 1000px) {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+    // @media all and (max-width: 830px) {
+    //     flex-basis: 430px;
+    // }
+    // @media all and (max-width: 650px) {
+    //     flex-basis: 100%;
+    //     margin-bottom: 10px;
+    // }
+}
 .service_content_box {
     flex-basis: 600px;
     .service_content_item {
@@ -25,6 +48,9 @@
     }
     .service_content_item:last-child {
         margin-bottom: 0px;
+    }
+    @media all and (max-width: 1000px) {
+        flex-basis: 410px;
     }
 }
 .service_item_title_box {
@@ -34,7 +60,7 @@
     align-items: center;
     border: 1px solid #e5e5e5;
     .item_title {
-        flex-basis: 497px;
+        flex-basis: 100%;
         text-align: left;
     }
     .serviceItemControl {
@@ -44,11 +70,14 @@
             cursor: pointer;
         }
     }
+    img {
+        margin-right: 15px;
+    }
 }
 
 .service_item_content {
     display: none;
-    height: 170px;
+    max-height: 170px;
     padding: 21px 55px 28px 20px;
     border: 1px solid #e5e5e5;
     overflow-y: scroll;
@@ -60,6 +89,12 @@
         font-weight: 400;
         line-height: 24px;
         text-align: left;
+    }
+    @media all and (max-width: 1280px) {
+        max-height: 94px;
+    }
+    @media all and (max-width: 1000px) {
+        min-height: 200px;
     }
 }
 
@@ -85,6 +120,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media all and (max-width: 830px) {
+            width: 100px;
+            height: 100px;
+        }
     }
     .service_about_slider_content {
         flex-basis: 767px;
@@ -98,10 +137,17 @@
             font-style: italic;
             margin-top: 10px;
             margin-bottom: 23px;
+            @media all and (max-width: 830px) {
+                font-size: 2rem;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                line-height: 28px;
+            }
+            @media all and (max-width: 830px) {
+                margin: 15px 0px;
+            }
         }
         .service_about_slider_content_about {
-            // display: flex;
-            // align-items: center;
             .horizontal_line {
                 margin-bottom: 6px;
             }
@@ -112,6 +158,13 @@
                 margin-left: 10px;
             }
         }
+        @media all and (max-width: 1280px) {
+            flex-basis: 75%;
+        }
+    }
+    @media all and (max-width: 830px) {
+        flex-direction: column;
+        align-items: center;
     }
 }
 

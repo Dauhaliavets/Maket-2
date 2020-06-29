@@ -74,6 +74,9 @@
                 vertical-align: bottom;
             }
         }
+        @media all and (max-width: 1280px) {
+            margin-top: 50px;
+        }
     }
     .footer_blogs_box {
         flex-basis: 360px;
@@ -106,6 +109,9 @@
                 margin-bottom: 0;
             }
         }
+        @media all and (max-width: 1280px) {
+            margin-top: 50px;
+        }
     }
     .footer_insta_box {
         flex-basis: 270px;
@@ -118,7 +124,22 @@
                 flex-basis: 88px;
                 display: flex;
                 margin: 1px;
+                img {
+                    width: 90%;
+                    height: 90%;
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.1);
+                    }
+                }
+                @media all and (max-width: 1280px) {
+                    flex-basis: 19%;
+                }
+                @media all and (max-width: 650px) {
+                    flex-basis: 32%;
+                }
             }
+
         }
         .view_more {
             color: $color-title;
@@ -130,6 +151,9 @@
             font-style: italic;
             cursor: pointer;
         }
+    }
+    @media all and (max-width: 1280px) {
+        flex-direction: column-reverse;
     }
 }
 

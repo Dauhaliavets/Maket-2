@@ -3,6 +3,7 @@
     url('../img/happy-clients/background-image.png') center no-repeat;
     padding: 109px 0px 59px;
     text-align: center;
+    background-size: cover;
 }
 
 .clients_box {
@@ -16,6 +17,10 @@
         margin-bottom: 70px;
         .item_foto {
             margin-right: 30px;
+            @media all and (max-width: 650px) {
+                margin-right: 0px;
+                text-align: left;
+            }
         }
         .item_info {
             text-align: left;
@@ -35,6 +40,12 @@
                 font-weight: 400;
                 line-height: 24px;
             }
+        }
+        @media all and (max-width: 1280px) {
+            flex-basis: 80%;
+        }
+        @media all and (max-width: 650px) {
+            flex-direction: column;
         }
     }
 }

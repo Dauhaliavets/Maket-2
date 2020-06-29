@@ -7,11 +7,22 @@
     .tablet {
         margin-left: -27px;
         margin-top: 45px;
+        @media all and (max-width: 650px) {
+            width: 100%;
+            margin-left: 0px;
+        }
     }
     .for_all_devices_phone_box {
         position: absolute;
         bottom: -91px;
-        left: 500px;
+        left: calc(50vw + 95px);
         right: 0;
+        text-align: left;
+        img {
+            width: 100%;
+        }
+        @media all and (max-width: 650px) {
+            left: 50vw;
+        }
     }
 }
